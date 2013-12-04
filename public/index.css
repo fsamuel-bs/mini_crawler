@@ -1,0 +1,35 @@
+h1 {
+	display: block;
+	margin: 0 auto;
+	margin-top: 200px;
+	text-align: center;
+	background: url("logo.png");
+	width: 300px;
+	height: 120px;
+	text-indent: -9999px;
+}
+body {
+	width: 100%;
+}
+input {
+	display: block;
+	text-align: center;
+	margin: 10px auto;
+	width: 400px;
+	height: 35px;
+	background: url("../search-icon.png") right no-repeat;
+	border: 1px solid #CCC;
+	font: italic 14px Georgia, serif;
+	color: #999;
+}
+button {
+	padding: 5px;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid #CCC;
+}
+.clear {
+	display: block;
+	clear: both;
+}
+

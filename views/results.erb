@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Coomp</title>
+    <link rel="stylesheet" href="results.css" />
+  </head>
+  <body id="results">
+    <div class="bar">
+      <h1> Coomp </h1>
+      <a href ="/">Nova busca</a>
+    </div>
+    <ol>
+      <h2> Resultados para "<%= @word %>" </h2>
+      <% @results.each do |result| %>
+        <li class="item">
+          <h3><a href=<%= result[:link] %>> <%= result[:title] %> </a></h3>
+          <p> URL <%= result[:link] %> </p>
+        </li>
+      <% end %>
+    </ol>
+  </body>
+</html>

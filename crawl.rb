@@ -106,10 +106,20 @@ class Crawler
     return unless @links != nil && !@links.empty? && @links.instance_of?(Array)
 
     @links.select! do |link|
-      if link
+      if link # && (link.split('.').last == 'html')
         link_splitted = link.split('/')
         # Parse link splitted according to html chosen
       end
+    end
+
+    @links.map! do |link|
+      if link && (link[0, 3] == '%20')
+        link = link[3, link.length - 3]
+      else
+        link
+      end
+
+      # if link.split('/').last.split('_').last == 'p2'
     end
 
     if (@links != nil && !@links.empty?)
